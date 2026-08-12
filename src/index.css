@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: 'DM Sans', sans-serif !important;
+  }
+
+  body {
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif !important;
+    overflow-x: hidden;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+/* Custom scrollbar for pure black theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666666;
+}
