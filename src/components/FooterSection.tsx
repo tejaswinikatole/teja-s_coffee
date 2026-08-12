@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { ArrowRight, Instagram, Facebook, Linkedin, Twitter, Youtube } from 'lucide-react';
 import { motion } from 'framer-motion';
 

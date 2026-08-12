@@ -1,4 +1,4 @@
-import React from 'react';
+import { Fragment } from 'react';
 import { HASHTAGS, MARQUEE_ITEMS } from '../data';
 import { Sparkles, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -99,10 +99,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onActionClick }) => {
       <div className="w-full mt-10 py-4 border-y border-white/20 bg-white/5 backdrop-blur-xl overflow-hidden select-none">
         <div className="animate-marquee whitespace-nowrap flex items-center gap-8 text-xs md:text-sm font-bold tracking-widest uppercase text-white">
           {Array(4).fill(MARQUEE_ITEMS).flat().map((item, index) => (
-            <React.Fragment key={index}>
+            <Fragment key={index}>
               <span>{item}</span>
               <Sparkles className="w-3.5 h-3.5 text-white inline-block mx-2" />
-            </React.Fragment>
+            </Fragment>
           ))}
         </div>
       </div>

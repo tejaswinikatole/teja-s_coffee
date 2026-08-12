@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { X, Send, CheckCircle2 } from 'lucide-react';
 
 interface ContactModalProps {

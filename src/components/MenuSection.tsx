@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MENU_ITEMS, CATEGORIES } from '../data';
 import { Star } from 'lucide-react';
 import { motion } from 'framer-motion';

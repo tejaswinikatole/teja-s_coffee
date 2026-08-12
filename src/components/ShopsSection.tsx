@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { SHOPS } from '../data';
 import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';

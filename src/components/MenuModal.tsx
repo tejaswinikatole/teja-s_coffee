@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { X, ArrowRight, Coffee, Store, HelpCircle, PhoneCall } from 'lucide-react';
 
 interface MenuModalProps {

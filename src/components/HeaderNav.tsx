@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Menu, Mail } from 'lucide-react';
 
 interface HeaderNavProps {
