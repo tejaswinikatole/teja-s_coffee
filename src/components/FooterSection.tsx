@@ -14,10 +14,10 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onActionClick }) =
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start border-b border-white/20 pb-16">
           {/* Giant Logo */}
           <motion.div 
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, margin: "-30px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="lg:col-span-7"
           >
             <h2 className="text-5xl sm:text-7xl lg:text-[100px] xl:text-[120px] font-black uppercase tracking-tighter leading-none text-white select-none break-words">

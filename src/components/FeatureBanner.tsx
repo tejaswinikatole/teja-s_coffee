@@ -14,10 +14,10 @@ export const FeatureBanner: React.FC<FeatureBannerProps> = ({ onActionClick }) =
         <div className="lg:col-span-5 border-b lg:border-b-0 lg:border-r border-white/20 p-8 md:p-12 lg:p-16 flex flex-col justify-between relative bg-transparent">
           {/* Top image visual representation */}
           <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.97 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.7 }}
+            viewport={{ once: true, margin: "-30px" }}
+            transition={{ duration: 0.5 }}
             className="w-full aspect-[4/3] rounded-xl border border-white/20 overflow-hidden mb-8 relative"
           >
             <img

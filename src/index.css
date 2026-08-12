@@ -3,13 +3,26 @@
 @layer base {
   * {
     font-family: 'DM Sans', sans-serif !important;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Momentum scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
   }
 
   body {
-    background-color: transparent;
+    background-color: #000000;
     color: #ffffff;
     font-family: 'DM Sans', sans-serif !important;
     overflow-x: hidden;
+    min-height: 100%;
+    /* Safe area for notched phones */
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
   }
 }
 
@@ -22,19 +35,38 @@
   display: flex;
   width: max-content;
   animation: marquee 30s linear infinite;
+  /* Hardware accelerate on mobile */
+  will-change: transform;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation-duration: 60s;
+  }
 }
 
 /* Custom scrollbar for pure black theme */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #333333;
+  background: rgba(255,255,255,0.2);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #666666;
+  background: rgba(255,255,255,0.4);
+}
+
+/* Hide scrollbar on mobile for cleaner look */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    scrollbar-width: none;
+  }
 }

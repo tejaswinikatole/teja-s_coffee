@@ -9,10 +9,10 @@ export const ShopsSection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
         <motion.div 
-          initial={{ opacity: 0, x: -30 }}
+          initial={{ opacity: 0, x: -15 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ duration: 0.5 }}
           className="mb-10"
         >
           <h2 className="text-5xl sm:text-7xl font-black uppercase tracking-tight text-white">
@@ -37,7 +37,7 @@ export const ShopsSection: React.FC = () => {
                 hidden: { opacity: 0, y: 30 },
                 visible: { opacity: 1, y: 0 }
               }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
               key={shop.id}
               className="group flex flex-col items-start cursor-pointer"
             >

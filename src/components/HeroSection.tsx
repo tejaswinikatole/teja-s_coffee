@@ -27,13 +27,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onActionClick }) => {
 
       {/* Main Banner Title: Coffee Break */}
       <motion.div 
-        initial={{ opacity: 0, scale: 0.95, y: 30 }}
+        initial={{ opacity: 0, scale: 0.97, y: 15 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
-        transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-        className="w-full text-center my-4"
+        viewport={{ once: true, margin: "-30px" }}
+        transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
+        className="w-full text-center my-2 md:my-4"
       >
-        <h1 className="text-6xl sm:text-8xl lg:text-[130px] xl:text-[160px] font-black tracking-tighter uppercase leading-none text-white select-none">
+        <h1 className="text-5xl sm:text-8xl lg:text-[130px] xl:text-[160px] font-black tracking-tighter uppercase leading-none text-white select-none">
           Coffee Break
         </h1>
       </motion.div>
@@ -42,37 +42,37 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onActionClick }) => {
       <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-8">
         {/* Left Side Copy */}
         <motion.div 
-          initial={{ opacity: 0, x: -30 }}
+          initial={{ opacity: 0, x: -15 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="lg:col-span-5 flex flex-col items-start gap-6 pr-0 lg:pr-6"
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="lg:col-span-5 flex flex-col items-center lg:items-start gap-4 md:gap-6 pr-0 lg:pr-6 text-center lg:text-left"
         >
-          <p className="text-sm md:text-base leading-relaxed text-white/90 font-normal">
+          <p className="text-sm md:text-base leading-relaxed text-white/90 font-normal max-w-sm lg:max-w-none">
             Teja's Coffee delivers freshly roasted beans crafted with rich flavors and sustainable sourcing. Each cup is designed to inspire warmth, energy, and connection.
           </p>
-          <p className="text-sm md:text-base leading-relaxed text-white/80 font-normal">
+          <p className="text-sm md:text-base leading-relaxed text-white/80 font-normal max-w-sm lg:max-w-none">
             We craft quality coffee daily, delivering perfect brews and stories of excellence.
           </p>
           <button
             onClick={onActionClick}
             id="btn-hero-get-stated"
-            className="mt-2 group flex items-center gap-3 px-8 py-3.5 rounded-full border-2 border-white bg-white text-black font-bold text-sm tracking-wide hover:bg-black hover:text-white transition-all duration-300 cursor-pointer shadow-lg shadow-white/10"
+            className="mt-1 group flex items-center gap-3 px-7 py-3 rounded-full border-2 border-white bg-white text-black font-bold text-sm tracking-wide hover:bg-black hover:text-white active:scale-95 transition-all duration-300 cursor-pointer shadow-lg shadow-white/10"
           >
-            <span>Get Stated</span>
+            <span>Get Started</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </motion.div>
 
-        {/* Center Visual: Cold Coffee Glass on Plain Black Background */}
+        {/* Center Visual */}
         <motion.div 
-          initial={{ opacity: 0, scale: 0.9, y: 30 }}
+          initial={{ opacity: 0, scale: 0.93, y: 15 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.7, delay: 0.3 }}
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className="lg:col-span-7 flex flex-col items-center justify-center relative my-4"
         >
-          <div className="relative w-full max-w-md aspect-[3/4] rounded-2xl border border-white/20 bg-white/5 backdrop-blur-xl flex flex-col items-center justify-between p-6 overflow-hidden group hover:border-white/50 hover:bg-white/10 transition-all duration-500 shadow-2xl shadow-black/30">
+          <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md aspect-[3/4] rounded-2xl border border-white/20 bg-white/5 backdrop-blur-xl flex flex-col items-center justify-between p-4 md:p-6 overflow-hidden group hover:border-white/50 hover:bg-white/10 transition-all duration-500 shadow-2xl shadow-black/30">
             {/* Subtle monochrome accent grid inside container */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:16px_16px] pointer-events-none"></div>
 

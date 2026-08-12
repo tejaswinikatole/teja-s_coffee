@@ -19,10 +19,10 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ onSelectItem }) => {
       <div className="max-w-7xl mx-auto">
         {/* Header Title Bar */}
         <motion.div 
-          initial={{ opacity: 0, x: -30 }}
+          initial={{ opacity: 0, x: -15 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ duration: 0.5 }}
           className="flex items-center justify-between border-b-2 border-white pb-6 mb-8"
         >
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight text-white">
@@ -35,10 +35,10 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ onSelectItem }) => {
 
         {/* Category Filter Pills */}
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ duration: 0.4, delay: 0.1 }}
           className="flex items-center gap-2 sm:gap-3 overflow-x-auto pb-6 mb-8 no-scrollbar scroll-smooth"
         >
           {CATEGORIES.map((category) => (
@@ -76,7 +76,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ onSelectItem }) => {
               transition={{ duration: 0.5 }}
               key={item.id}
               onClick={() => onSelectItem?.(item.id)}
-              className="group border border-white/20 bg-white/5 backdrop-blur-xl rounded-xl p-5 flex flex-col items-center text-center transition-all duration-300 hover:border-white/50 hover:bg-white/10 hover:shadow-xl hover:shadow-white/5 cursor-pointer"
+              className="group border border-white/20 bg-white/5 backdrop-blur-xl rounded-xl p-4 md:p-5 flex flex-col items-center text-center transition-all duration-300 hover:border-white/50 hover:bg-white/10 hover:shadow-xl hover:shadow-white/5 active:scale-95 cursor-pointer"
             >
               {/* Product Glass / Image Container */}
               <div className="w-full aspect-[4/5] rounded-lg bg-white/5 border border-white/10 overflow-hidden mb-5 flex items-center justify-center p-4 relative">
