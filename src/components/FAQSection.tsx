@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FAQS } from '../data';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const FAQSection: React.FC = () => {

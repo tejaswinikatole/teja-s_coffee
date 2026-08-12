@@ -31,7 +31,7 @@ export const ShopsSection: React.FC = () => {
           }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
-          {SHOPS.map((shop, index) => (
+          {SHOPS.map((shop) => (
             <motion.div
               variants={{
                 hidden: { opacity: 0, y: 30 },
